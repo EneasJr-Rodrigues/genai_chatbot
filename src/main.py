@@ -45,6 +45,7 @@ if st.session_state['authentication_status']:
                 arquivo_conteudo = uploaded_file.getvalue()
                 arquivo_nome = uploaded_file.name                    
                 df = excel_to_dataframe(config.get('folder_xlsx'))
+                df = df.head(1000)
                 st.success("Nova base carregado com sucesso!", icon="✅")
             except Exception as e:
                 error_trace = traceback.format_exc()

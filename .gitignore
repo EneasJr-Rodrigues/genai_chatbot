@@ -132,6 +132,7 @@ venv.bak/
 .xlsx
 .json
 config/secrets/*.json
+src/config/secrets/*
 
 # Spyder project settings
 .spyderproject
